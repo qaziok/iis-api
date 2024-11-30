@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from .routers import example
+from .routers import add, search
 
 app = FastAPI(
     title='renameme',
@@ -8,4 +8,5 @@ app = FastAPI(
     version='0.1',
 )
 
-app.include_router(example.router)
+app.include_router(add.router)
+app.include_router(search.router)
