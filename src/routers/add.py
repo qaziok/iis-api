@@ -10,7 +10,7 @@ router = APIRouter(
 )
 
 
-@router.post("/")
+@router.post("")
 async def add(request: Request):
     input_data = await request.body()
     text = input_data.decode('utf-8')

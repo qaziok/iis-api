@@ -9,7 +9,7 @@ router = APIRouter(
 )
 
 
-@router.post("/")
+@router.post("")
 async def search(request: Request):
     query = await request.body()
     text = query.decode('utf-8')

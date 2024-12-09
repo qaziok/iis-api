@@ -2,7 +2,7 @@ services:
   api:
     build: .
     ports:
-      - "8000:8000"
+      - "8080:8080"
     environment:
       - TOKENIZER=dkleczek/bert-base-polish-cased-v1
       - CHUNK_SIZE=100
