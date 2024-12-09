@@ -1,11 +1,11 @@
-from fastapi import FastAPI
+from fastapi import FastAPI  # type: ignore
 
 from .routers import add, search
 
 app = FastAPI(
-    title='renameme',
-    description='Fill the description',
-    version='0.1',
+    title='IIS-API',
+    description='API for vector search',
+    version='0.2',
 )
 
 app.include_router(add.router)
