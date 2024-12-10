@@ -52,18 +52,19 @@ class _MarqoConnector(BaseConnector):
     @staticmethod
     def __ad_marqo_to_documents(documents: list[Document], response: list[dict]) -> list[Document]:
         """Transforms the add documents response from Marqo to a list of Document objects"""
-        response = []
+        documents_to_return = []
         for doc in response:
-            og_doc = next((d for d in documents if d.id == doc["_id"]), None)
+            og_doc = next(
+                (d for d in documents if str(d.id) == doc["_id"]), None)
             if og_doc:
-                response.append(
+                documents_to_return.append(
                     Document(
                         id=doc["_id"],
-                        data=og_doc["data"],
-                        url=og_doc["url"],
+                        data=og_doc.data,
+                        url=og_doc.url
                     )
                 )
-        return response
+        return documents_to_return
 
     @staticmethod
     def __s_marqo_to_documents(response: list[dict]) -> list[Document]:
