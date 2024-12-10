@@ -1,6 +1,6 @@
-from fastapi import APIRouter, Request  # type: ignore
+from fastapi import APIRouter, Body, Query
 
-from ..db import connector
+from src.db import connector
 
 router = APIRouter(
     prefix='/search',
@@ -10,13 +10,15 @@ router = APIRouter(
 
 
 @router.post("")
-async def search(request: Request):
-    query = await request.body()
-    text = query.decode('utf-8')
+async def search(
+    query: str = Body(..., media_type="text/plain",
+                      description="Query to search"),
+    limit: int = Query(5, description="Number of results to return"),
 
-    results = connector.search(text, 5)
+):
+    results = connector.search(query, limit)
 
     return {
-        "query": text,
+        "query": query,
         "results": [doc.to_search_response() for doc in results],
     }

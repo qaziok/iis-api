@@ -1,10 +1,10 @@
 # https://milvus.io/docs/integrate_with_sentencetransformers.md
 
-from .base_connector import BaseConnector
+from src.db import BaseConnector
 
 
-class __MilvusConnector(BaseConnector):
+class _MilvusConnector(BaseConnector):
     raise NotImplementedError("Milvus connector is not implemented yet")
 
 
-milvus_connector = __MilvusConnector()
+milvus_connector = _MilvusConnector()

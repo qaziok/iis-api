@@ -1,4 +1,5 @@
 from src import pyenv
+from src.db.base_connector import BaseConnector
 
 match pyenv.settings.db:
     case "marqo":

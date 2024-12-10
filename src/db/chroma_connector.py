@@ -1,10 +1,10 @@
 # https://docs.trychroma.com/guides/embeddings
 
-from .base_connector import BaseConnector
+from src.db import BaseConnector
 
 
-class __ChromaConnector(BaseConnector):
+class _ChromaConnector(BaseConnector):
     raise NotImplementedError("Chroma connector is not implemented yet")
 
 
-chroma_connector = __ChromaConnector()
+chroma_connector = _ChromaConnector()

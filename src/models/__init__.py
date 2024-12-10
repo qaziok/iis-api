@@ -1,1 +1,1 @@
-from .document import Document
+from src.models.document import Document

@@ -8,7 +8,7 @@ from src import pyenv
 from src.models import Document
 
 
-class Splitter:
+class _Splitter:
     def __init__(self):
         self.tokenizer = AutoTokenizer.from_pretrained(
             pyenv.settings.tokenizer)
@@ -48,4 +48,4 @@ class Splitter:
         return docs
 
 
-splitter = Splitter()
+splitter = _Splitter()

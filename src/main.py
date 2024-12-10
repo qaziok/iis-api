@@ -1,12 +1,12 @@
-from fastapi import FastAPI  # type: ignore
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from .routers import add, search
+from src.routers import add, search
 
 app = FastAPI(
     title='IIS-API',
     description='API for vector search',
-    version='0.2',
+    version='0.3',
 )
 
 

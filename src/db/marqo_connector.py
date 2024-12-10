@@ -4,12 +4,12 @@ import logging
 from marqo import Client
 from marqo.errors import MarqoWebError
 
-from .base_connector import BaseConnector
 from src import pyenv
+from src.db import BaseConnector
 from src.models import Document
 
 
-class __MarqoConnector(BaseConnector):
+class _MarqoConnector(BaseConnector):
     def __init__(self):
         self.client = Client(pyenv.settings.marqo_url)
         self.index_name = pyenv.settings.marqo_index_name
@@ -78,4 +78,4 @@ class __MarqoConnector(BaseConnector):
         ]
 
 
-marqo_connector = __MarqoConnector()
+marqo_connector = _MarqoConnector()

@@ -1,11 +1,11 @@
 import random
 from typing import List
 
-from .base_connector import BaseConnector
-from ..models import Document
+from src.db import BaseConnector
+from src.models import Document
 
 
-class __MockConnector(BaseConnector):
+class _MockConnector(BaseConnector):
     def __init__(self):
         self.documents = {}
 
@@ -24,4 +24,4 @@ class __MockConnector(BaseConnector):
         return random.choices(list(self.documents.values()), k=limit)
 
 
-mock_connector = __MockConnector()
+mock_connector = _MockConnector()
