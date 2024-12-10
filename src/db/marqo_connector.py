@@ -54,7 +54,8 @@ class _MarqoConnector(BaseConnector):
         """Transforms the add documents response from Marqo to a list of Document objects"""
         response = []
         for doc in response:
-            og_doc = next((d for d in documents if d.id == doc["_id"]), None)
+            og_doc = next(
+                (d for d in documents if str(d.id) == doc["_id"]), None)
             if og_doc:
                 response.append(
                     Document(
