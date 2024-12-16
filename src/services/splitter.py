@@ -2,7 +2,9 @@ from itertools import islice
 from transformers import AutoTokenizer
 from semantic_text_splitter import TextSplitter
 from os.path import exists, join
-from uuid import uuid4
+from uuid import UUID
+import hashlib
+
 
 from src import pyenv
 from src.models import Document
@@ -30,15 +32,20 @@ class _Splitter:
             result = result[1:] + (elem,)
             yield result
 
+    @staticmethod
+    def create_uuid(url, index, _text):
+        hash_string = hashlib.md5(f"{url}/{index}".encode()).hexdigest()
+        return UUID(hex=hash_string, version=4)
+
     def to_documents(self, text, **kwargs):
         chunks = self.text_splitter.chunks(text)
 
         docs = [
             Document(
-                id=uuid4(),
+                id=self.create_uuid(kwargs.get('url'), i, chunk),
                 data=chunk,
                 url=kwargs.get('url'),
-            ) for chunk in chunks
+            ) for i, chunk in enumerate(chunks)
         ]
 
         # for prev, doc, next in self.window([None, *docs, None], 3):

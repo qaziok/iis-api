@@ -2,3 +2,4 @@ fastapi[standard]==0.115.0
 marqo==3.9.2
 semantic-text-splitter==0.19.0
 transformers==4.47.0
+datasets==3.2.0
