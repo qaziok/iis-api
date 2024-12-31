@@ -12,6 +12,13 @@ services:
       - MARQO_MODEL=hf/multilingual-e5-base
       - MAX_CHARS=1000
       - MAX_RECORDS=10
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
 
   web:
     image: qaziok/iis-web
@@ -23,3 +30,10 @@ services:
 
   marqo:
     image: marqoai/marqo:latest
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
