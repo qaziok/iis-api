@@ -34,6 +34,9 @@ ENV PYTHONUNBUFFERED=1
 # Add pip's user base to PATH
 ENV PATH="$PATH:/home/python/.local/bin"
 
+# Pre download and cache dataset
+# RUN python -m src.db_cache
+
 # expose port
 EXPOSE 8080
 
