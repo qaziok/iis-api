@@ -7,11 +7,18 @@ services:
       - TOKENIZER=dkleczek/bert-base-polish-cased-v1
       - CHUNK_SIZE=100
       - DB=marqo
+      - INDEX_NAME=wikipedia
       - MARQO_URL=http://marqo:8882
-      - MARQO_INDEX_NAME=wikipedia
       - MARQO_MODEL=hf/multilingual-e5-base
       - MAX_CHARS=1000
       - MAX_RECORDS=10
+      - CHROMA_HOST=chroma
+      - CHROMA_PORT=8000
+      - CHROMA_MODEL=intfloat/multilingual-e5-base
+      - CHROMA_DEVICE=cpu
 
   marqo:
     image: marqoai/marqo:latest
+
+  chroma:
+    image: chromadb/chroma:latest

@@ -13,5 +13,3 @@ load_dotenv()
 settings = Settings({
     key.lower(): value for key, value in os.environ.items()
 })
-
-print(settings.path)

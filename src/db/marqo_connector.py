@@ -12,7 +12,7 @@ from src.models import Document
 class _MarqoConnector(BaseConnector):
     def __init__(self):
         self.client = Client(pyenv.settings.marqo_url)
-        self.index_name = pyenv.settings.marqo_index_name
+        self.index_name = pyenv.settings.index_name
         try:
             self.client.create_index(
                 self.index_name, model=pyenv.settings.marqo_model)
