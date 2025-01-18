@@ -16,7 +16,7 @@ def print_record(record):
 def print_segments(record):
     segments = splitter.to_documents(record['text'], url=record['url'])
     for segment in segments:
-        print(f'---{segment.id}---')
+        print(f'---{segment.id}---|{record['id']}')
         print(segment.data)
         print('------------------------------------------')
         print()
@@ -25,7 +25,7 @@ def print_segments(record):
 if __name__ == "__main__":
     ds = load_dataset("wikimedia/wikipedia", "20231101.pl", split='train')
 
-    records = ds.filter(lambda record: sys.argv[1] in record['title'])
+    records = ds.filter(lambda record: sys.argv[1].lower() in record['title'].lower())
 
     for record in records:
         print_record(record)
