@@ -94,10 +94,11 @@ google-auth==2.37.0
     # via kubernetes
 googleapis-common-protos==1.66.0
     # via opentelemetry-exporter-otlp-proto-grpc
-grpcio==1.69.0
+grpcio==1.67.1
     # via
     #   chromadb
     #   opentelemetry-exporter-otlp-proto-grpc
+    #   pymilvus
 h11==0.14.0
     # via
     #   httpcore
@@ -145,6 +146,8 @@ marqo==3.9.2
     # via -r requirements.in
 mdurl==0.1.2
     # via markdown-it-py
+milvus-lite==2.4.11
+    # via pymilvus
 mmh3==5.0.1
     # via chromadb
 monotonic==1.6
@@ -259,7 +262,9 @@ packaging==24.2
     #   opentelemetry-instrumentation
     #   transformers
 pandas==2.2.3
-    # via datasets
+    # via
+    #   datasets
+    #   pymilvus
 pillow==11.1.0
     # via sentence-transformers
 posthog==3.8.3
@@ -273,6 +278,7 @@ protobuf==5.29.3
     #   googleapis-common-protos
     #   onnxruntime
     #   opentelemetry-proto
+    #   pymilvus
 pyarrow==18.1.0
     # via datasets
 pyasn1==0.6.1
@@ -290,6 +296,8 @@ pydantic-core==2.23.4
     # via pydantic
 pygments==2.18.0
     # via rich
+pymilvus==2.5.3
+    # via -r requirements.in
 pypika==0.48.9
     # via chromadb
 pyproject-hooks==1.2.0
@@ -302,7 +310,9 @@ python-dateutil==2.9.0.post0
     #   pandas
     #   posthog
 python-dotenv==1.0.1
-    # via uvicorn
+    # via
+    #   pymilvus
+    #   uvicorn
 python-multipart==0.0.12
     # via fastapi
 pytz==2024.2
@@ -378,6 +388,7 @@ tqdm==4.67.1
     #   chromadb
     #   datasets
     #   huggingface-hub
+    #   milvus-lite
     #   sentence-transformers
     #   transformers
 transformers==4.47.0
@@ -402,6 +413,8 @@ typing-extensions==4.12.2
     #   typer
 tzdata==2024.2
     # via pandas
+ujson==5.10.0
+    # via pymilvus
 urllib3==2.2.3
     # via
     #   kubernetes
