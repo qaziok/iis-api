@@ -21,7 +21,8 @@ class _ChromaConnector(BaseConnector):
             host=pyenv.settings.chroma_host, port=int(pyenv.settings.chroma_port))
         self.index = self.client.get_or_create_collection(
             name=pyenv.settings.index_name,
-            embedding_function=self.embedding_function
+            embedding_function=self.embedding_function,
+            metadata=self.metadata
         )
 
     @property
@@ -30,6 +31,20 @@ class _ChromaConnector(BaseConnector):
             model_name=pyenv.settings.chroma_model,
             device=pyenv.settings.chroma_device
         )
+
+    @property
+    def metadata(self):
+        initial = {
+            "hnsw:space": pyenv.settings.chroma_hnsw_space,
+            "hnsw:ef_construction": pyenv.settings.chroma_hnsw_ef_construction,
+            "hnsw:search_ef": pyenv.settings.chroma_hnsw_search_ef,
+            "hnsw:M": pyenv.settings.chroma_hnsw_m
+        }
+
+        metadata = {key: value for key, value in initial.items()
+                    if value is not None}
+
+        return metadata if metadata else None
 
     def add_documents(self, documents: list[Document]) -> list[Document]:
         docs, ids, meta = self.__ad_documents_to_chroma(documents)
