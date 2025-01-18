@@ -6,12 +6,11 @@ services:
     environment:
       - TOKENIZER=dkleczek/bert-base-polish-cased-v1
       - CHUNK_SIZE=100
-      - DB=marqo
-      - MARQO_URL=http://marqo:8882
-      - MARQO_INDEX_NAME=wikipedia
-      - MARQO_MODEL=hf/multilingual-e5-base
+      - INDEX_NAME=wikipedia
       - MAX_CHARS=1000
       - MAX_RECORDS=10
+    env_file: # change this env file to change used database
+      - .env.chroma
     deploy:
       resources:
         reservations:
@@ -30,6 +29,16 @@ services:
 
   marqo:
     image: marqoai/marqo:latest
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  chroma:
+    image: chromadb/chroma
     deploy:
       resources:
         reservations:
