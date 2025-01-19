@@ -1,0 +1,7 @@
+[
+    {
+        "query": "Kto był pierwszym prezydentem Polski?",
+        "segments": ["fa7cf12f-df37-40dd-af44-1a8d9d2e08c1", "f6dd6681-dd85-48d8-8c16-5aeb6a17f0e3", "57c6b363-f51d-4928-ab7a-e48ff522cbcb", "0c549d65-a4a9-4ef6-82b5-5c72606f1298", "7cddc936-75fb-4029-aa62-96bc7b93eadd"],
+        "articles": ["https://pl.wikipedia.org/wiki/Gabriel%20Narutowicz", "https://pl.wikipedia.org/wiki/Gabriel%20Narutowicz%20%28ujednoznacznienie%29", "https://pl.wikipedia.org/wiki/Gabriel%20Narutowicz%20%28lo%C5%BCa%20wolnomularska%29"]
+    }
+]

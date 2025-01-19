@@ -16,7 +16,7 @@ def print_record(record):
 def print_segments(record):
     segments = splitter.to_documents(record['text'], url=record['url'])
     for segment in segments:
-        print(f'---{segment.id}---|{record['id']}')
+        print(f'---{segment.id}---|{record['url']}')
         print(segment.data)
         print('------------------------------------------')
         print()

@@ -347,7 +347,9 @@ rsa==4.9
 safetensors==0.4.5
     # via transformers
 scikit-learn==1.6.1
-    # via sentence-transformers
+    # via
+    #   -r requirements.in
+    #   sentence-transformers
 scipy==1.15.1
     # via
     #   scikit-learn
