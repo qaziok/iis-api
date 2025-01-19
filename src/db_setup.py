@@ -19,7 +19,7 @@ if __name__ == "__main__":
     if pyenv.settings.include_tests == 'true':
         articles = list(set([article for test in pyenv.tests for article in test['articles']]))
         dsa = ds.filter(lambda record: record['url'] in articles)
-        dsout = concatenate_datasets([dsout, dsa])
+        dsout = concatenate_datasets([dsa, dsout])
 
     print(f'\n---Dataset will contain {dsout.num_rows} articles---\n')
 
