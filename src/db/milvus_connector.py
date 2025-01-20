@@ -29,8 +29,6 @@ class _MilvusConnector(BaseConnector):
             self.client.create_collection(
                 collection_name=self.collection_name, schema=schema)
 
-        self.client.load_collection(self.collection_name)
-
         index_params = self.client.prepare_index_params()
         index_params.add_index(
             field_name="vector",
@@ -55,6 +53,7 @@ class _MilvusConnector(BaseConnector):
                     index_name='vector_index'
                 )
         self.client.create_index(self.collection_name, index_params)
+        self.client.load_collection(self.collection_name)
 
     def add_documents(self, documents: list[Document]) -> list[Document]:
         embeddings = self.model.encode([doc.data for doc in documents])
