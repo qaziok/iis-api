@@ -1,0 +1,32 @@
+services:
+  chroma:
+    image: chromadb/chroma
+    environment:
+      - IS_PERSISTENT=TRUE
+      - PERSIST_DIRECTORY=${PERSIST_DIRECTORY:-/chroma/chroma}
+    volumes:
+      - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/chroma:/chroma/chroma
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  api:
+    image: qaziok/iis-api:main
+    ports:
+      - "18434:8080"
+    env_file:
+      - .envs/.env.base
+      - .envs/.env.chroma
+    depends_on:
+      - "chroma"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
