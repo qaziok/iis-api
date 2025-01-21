@@ -3,5 +3,90 @@
         "query": "Kto był pierwszym prezydentem Polski?",
         "segments": ["fa7cf12f-df37-40dd-af44-1a8d9d2e08c1", "f6dd6681-dd85-48d8-8c16-5aeb6a17f0e3", "57c6b363-f51d-4928-ab7a-e48ff522cbcb", "0c549d65-a4a9-4ef6-82b5-5c72606f1298", "7cddc936-75fb-4029-aa62-96bc7b93eadd"],
         "articles": ["https://pl.wikipedia.org/wiki/Gabriel%20Narutowicz", "https://pl.wikipedia.org/wiki/Gabriel%20Narutowicz%20%28ujednoznacznienie%29", "https://pl.wikipedia.org/wiki/Gabriel%20Narutowicz%20%28lo%C5%BCa%20wolnomularska%29"]
+    },
+    {
+        "query": "W którym roku powstał Minecraft?",
+        "segments": ["bc5611ce-13ba-4fd2-a750-dee1831c503a", "866127a9-7149-4b53-9ba7-87a96f6b26aa", "11f8b58a-15c9-4670-8a6f-2b827f89655d", "bcd7af9a-fff6-48a3-9609-7fe1e391b203", "4f999137-6fbe-4a2f-8fba-ec138f842683"],
+        "articles": ["https://pl.wikipedia.org/wiki/Minecraft"]
+    },
+    {
+        "query": "Kto stworzył Warhammera?",
+        "segments": ["1fb7c5dc-a0be-4489-aed4-c8dbbb9667b1", "c7c5b7df-4127-436d-a8c2-988ecb088c96", "3ab03d32-67ad-496b-9cd0-3a60b66bc2d5", "a2457bc7-3870-4db2-b54d-95688e020285", "dd9bc9e7-323a-443d-a1d9-739a598ec598"],
+        "articles": ["https://pl.wikipedia.org/wiki/Games%20Workshop", "https://pl.wikipedia.org/wiki/Warhammer%2040%2C000", "https://pl.wikipedia.org/wiki/Warhammer%20Fantasy", "https://pl.wikipedia.org/wiki/Warhammer%20Fantasy%20Roleplay", "https://pl.wikipedia.org/wiki/Warhammer%20Fantasy%20Battle"]
+    },
+    {
+        "query": "W którym roku wydana została gra World of Tanks?",
+        "segments": ["ae57e62d-91ae-4e35-96ab-f7ae361510c2", "b32499c8-6715-4db3-8c79-d57ae90b978a", "e0d5e424-3bab-4021-a0e4-498b027ab21f", "9f107b07-cd76-453a-98c2-ef8fb5a192a3", "083fde71-ca28-49af-acb5-e2918cbe16b2"],
+        "articles": ["https://pl.wikipedia.org/wiki/World%20of%20Tanks", "https://pl.wikipedia.org/wiki/World%20of%20Tanks%20Blitz"]
+    },
+    {
+        "query": "Kto stworzył Total war?",
+        "segments": ["0f64bad1-da2f-4354-af11-0f4cbd8e353a", "bf553e43-8c67-462f-a68c-fcfd318b3d76", "cd1d094f-082c-490c-8b60-e2b67726b0da", "dd191a66-6c7e-4fb3-93bb-5886a88455bb", "f79e8822-7ad4-46d1-be23-8762b860be8d"],
+        "articles": ["https://pl.wikipedia.org/wiki/Total%20War%20%28seria%29", "https://pl.wikipedia.org/wiki/Medieval%3A%20Total%20War", "https://pl.wikipedia.org/wiki/Medieval%20II%3A%20Total%20War", "https://pl.wikipedia.org/wiki/Total%20War%3A%20Warhammer", "https://pl.wikipedia.org/wiki/Total%20War%3A%20Attila"]
+    },
+    {
+        "query": "Kto stworzył szczególną teorię względności?",
+        "segments": ["c8b54eb5-751a-4e0c-b247-1977aa804786", "3e08591b-6efa-4400-8ca6-1335bbd10405", "e864701a-2af6-4dde-8848-8ca81d3806ac", "7ea5110b-22bf-44c7-9b65-bc57a53397d4", "bd2aa0c5-c1b7-4329-acdf-d10660b14ee1"],
+        "articles": ["https://pl.wikipedia.org/wiki/Og%C3%B3lna%20teoria%20wzgl%C4%99dno%C5%9Bci", "https://pl.wikipedia.org/wiki/Albert%20Einstein"]
+    },
+    {
+        "query": "Kto stworzył Need for Speed?",
+        "segments": ["667effca-c850-4ad9-b09f-b890cc498ba9", "15536ddc-1693-4533-b6f7-d8ae3fa94eba", "bc6622da-78a8-4558-8504-b27e08bbf512", "4884a3b3-0a7a-4095-9b46-eaff58d08c61", "087768c0-97b8-43b5-8a78-eda928260223"],
+        "articles": ["https://pl.wikipedia.org/wiki/Need%20for%20Speed%20Heat", "https://pl.wikipedia.org/wiki/Need%20for%20Speed%20Payback", "https://pl.wikipedia.org/wiki/Need%20for%20Speed%3A%20Most%20Wanted%20%28gra%20komputerowa%202012%29", "https://pl.wikipedia.org/wiki/Need%20for%20Speed%3A%20Hot%20Pursuit", "https://pl.wikipedia.org/wiki/Need%20for%20Speed%3A%20Nitro"]
+    },
+    {
+        "query": "Kiedy wydane zostało Grand Theft Auto V?",
+        "segments": ["11c2bb53-ad20-4bbb-a47e-e6886351ffdc", "c7757ed2-bc40-4441-8eaa-0243f9889831", "4e834f09-e5fe-4681-8b6e-0675ccabcf9d", "f3534004-8347-4e81-a1ac-e7c323a7f89a", "79ca7b4c-53ef-4aa0-b8e6-b78dc1534343"],
+        "articles": ["https://pl.wikipedia.org/wiki/Grand%20Theft%20Auto%20V"]
+    },
+    {
+        "query": "Kto wydał Grand Theft Auto?",
+        "segments": ["edd959fa-50ef-46e9-b99b-51e7f3a97d95", "11c2bb53-ad20-4bbb-a47e-e6886351ffdc", "707aa633-e0c0-4df8-8a0e-b2fa20102122", "7266efad-eb61-45c8-962e-f57bed2592cd", "706cfc4d-ea65-4909-ad93-b4b36f5953a9"],
+        "articles": ["https://pl.wikipedia.org/wiki/Grand%20Theft%20Auto%20%28seria%29", "https://pl.wikipedia.org/wiki/Grand%20Theft%20Auto%20V", "https://pl.wikipedia.org/wiki/Grand%20Theft%20Auto%20IV", "https://pl.wikipedia.org/wiki/Grand%20Theft%20Auto%20%28gra%20komputerowa%29", "https://pl.wikipedia.org/wiki/Grand%20Theft%20Auto%3A%20San%20Andreas"]
+    },
+    {
+        "query": "Kto był polką dwukrotnie wyróżnioną nagrodą nobla?",
+        "segments": ["057a6cfc-f685-4601-8071-3304dd0d387c", "e0e33810-9175-4b84-a931-f20ea0d52eaa", "94addc88-0f8c-4488-987b-056456563652", "0dd9eae7-a99f-40f4-915e-68c3d586e9e1", "a75f32cb-873d-4320-96de-eecb399d050e"],
+        "articles": ["https://pl.wikipedia.org/wiki/Maria%20Sk%C5%82odowska-Curie", "https://pl.wikipedia.org/wiki/Lista%20laureat%C3%B3w%20Nagrody%20Nobla", "https://pl.wikipedia.org/wiki/Maria%20Sk%C5%82odowska-Curie%20%28film%202016%29"]
+    },
+    {
+        "query": "Z czego składa się obłok Oorta?",
+        "segments": ["fc6848a7-e005-4754-9ab0-16c5f5a96531", "e27772f1-1e3c-4e98-abe7-11bd40f1e255", "8d32787f-6591-4c9a-a389-4ede590a24f2", "bcfd6efd-2043-43ec-a99f-b16a29eb92f6", "ff34c428-ad87-4ecc-a85f-63f70103d945"],
+        "articles": ["https://pl.wikipedia.org/wiki/Ob%C5%82ok%20Oorta"]
+    },
+    {
+        "query": "Jak wielka jest galaktyka Andromeda?",
+        "segments": ["30e08190-e371-42ce-94de-7a7bb738a627", "5df65ca8-2e48-4b38-96d8-644fe41578db", "f02fdd33-21df-48e9-946e-5b4f167fa569", "24c46949-b1a0-4d56-8d8e-b11fb8f0552e", "15703dfa-bc0d-47fc-a54b-4fe84c1e70f3"],
+        "articles": ["https://pl.wikipedia.org/wiki/Galaktyka%20Andromedy"]
+    },
+    {
+        "query": "Kto wydał grę Civilization?",
+        "segments": ["f77713ff-1e0d-4c0a-9387-782b27b1b099", "46147dd7-8dfe-4159-9c08-78191bcfaf08", "88338e41-0852-4c70-a520-e6e31cf6c0ef", "b06de84d-bc85-48a8-ad72-af5de14d744b", "4270eb0d-1ab4-4d85-82a0-e190719ecec3"],
+        "articles": ["https://pl.wikipedia.org/wiki/Civilization", "https://pl.wikipedia.org/wiki/Civilization%20%28seria%29", "https://pl.wikipedia.org/wiki/Civilization%3A%20Beyond%20Earth", "https://pl.wikipedia.org/wiki/Civilization%20IV", "https://pl.wikipedia.org/wiki/Civilization%20III"]
+    },
+    {
+        "query": "Do kogo należy Android?",
+        "segments": ["4aa7cba8-8af0-4eba-b379-e402b5ffc8ae", "7a9eae29-0f07-46ba-a951-10142b17ab3d", "9dd4e211-1bd9-4fe8-9ab7-e8da84ed04a0", "1a5a1382-ea0c-48fa-83dd-687fb19efa3b", "58b40b68-f7a9-4014-bd41-39060eb2378a"],
+        "articles": ["https://pl.wikipedia.org/wiki/Google", "https://pl.wikipedia.org/wiki/Android%2013","https://pl.wikipedia.org/wiki/Android%2011", "https://pl.wikipedia.org/wiki/Android%20Auto", "https://pl.wikipedia.org/wiki/Android%20%28system%20operacyjny%29"]
+    },
+    {
+        "query": "Jakie funkcje pełnił Józef Piłsudski?",
+        "segments": ["5d547560-f325-4a2f-ad5a-644120481940", "b50e501a-fa78-4efc-8956-bb93901f43cd", "377305ca-930f-4c7f-914d-dc70321d3d4c", "e284a146-4c49-47b9-8b84-41f349aa0c46", "414c7090-fef5-4f13-a4c5-85de082efd12"],
+        "articles": ["https://pl.wikipedia.org/wiki/J%C3%B3zef%20Pi%C5%82sudski"]
+    },
+    {
+        "query": "Kto był przywódcą niemiec w trakcie II wojny światowej?",
+        "segments": ["dd393d2b-1226-4033-85e4-2a31b34f67d6", "20e45c37-de6e-43c1-8bea-085caa2704c5", "90799a14-34e1-4834-864d-55f65b4410e2", "4f50d4a5-71d2-452a-9d7f-9295dd0fccc4", "35eb906d-1a4e-4fbe-b1df-2587a7f6fcad"],
+        "articles": ["https://pl.wikipedia.org/wiki/Adolf%20Hitler"]
+    },
+    {
+        "query": "Czym jest kontynent na południu globu?",
+        "segments": ["a3c3bbbd-9f3c-4349-a250-a6ace800f548", "9a41b0af-1e00-4764-80c2-b5dc95e75df8", "7cbdb33c-6ebf-4e2f-a451-3b8dbc9d17f6", "fae6c6fb-b7a8-4911-a5e0-51fcc5afb0b2", "ea9141ea-1c40-4a4b-b727-64e0fe7e57fe"],
+        "articles": ["https://pl.wikipedia.org/wiki/Antarktyda"]
+    },
+    {
+        "query": "Kto rządzi Grenlandią?",
+        "segments": ["73f79236-1708-4595-a5e2-db8295b98cf0", "a6fc756d-8fed-403f-aac5-02119341cfbb", "eefc433c-ef48-42e5-b8d0-56d0c3d6cafd", "b0ca69e2-495f-41b5-bd3c-26c04af1ec16", "13428f3a-9e18-47f1-bf67-a793684c26a8"],
+        "articles": ["https://pl.wikipedia.org/wiki/Grenlandia"]
     }
 ]
