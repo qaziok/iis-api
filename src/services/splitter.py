@@ -65,6 +65,9 @@ class _Splitter:
                     parsed.append(prev + "\n" + chunk)
                 else:
                     parsed.append(chunk)
+        
+        if pyenv.settings.min_chunk_chars:
+            parsed = list(filter(lambda chunk: len(chunk) >= int(pyenv.settings.min_chunk_chars), parsed))
 
         docs = [
             Document(

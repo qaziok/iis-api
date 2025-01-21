@@ -28,4 +28,5 @@ if __name__ == "__main__":
 
     for record in tqdm(dsout):
         docs = splitter.to_documents(record['text'], url=record['url'])
-        connector.add_documents(docs)
+        if (len(docs) > 0):
+            connector.add_documents(docs)

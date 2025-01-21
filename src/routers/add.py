@@ -16,6 +16,8 @@ async def add(
         url: str = Query(..., description="URL of the text to index")
 ):
     documents = splitter.to_documents(text, url=url)
-    results = connector.add_documents(documents)
-
-    return [doc.to_add_response() for doc in results]
+    if (len(documents) > 0):
+        results = connector.add_documents(documents)
+        return [doc.to_add_response() for doc in results]
+    else:
+        return []

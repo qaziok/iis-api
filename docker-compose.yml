@@ -11,6 +11,7 @@ services:
       - MARQO_URL=http://marqo:8882
       - MARQO_MODEL=hf/multilingual-e5-base
       - MAX_CHARS=1000
+      - MIN_CHUNK_CHARS=25
       - MAX_RECORDS=100
       - INCLUDE_TESTS=true
       - CHROMA_HOST=chroma
