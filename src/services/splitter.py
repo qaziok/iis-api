@@ -65,9 +65,6 @@ class _Splitter:
                     parsed.append(prev + "\n" + chunk)
                 else:
                     parsed.append(chunk)
-        
-        if pyenv.settings.min_chunk_chars:
-            parsed = list(filter(lambda chunk: len(chunk) >= int(pyenv.settings.min_chunk_chars), parsed))
 
         docs = [
             Document(
@@ -76,6 +73,9 @@ class _Splitter:
                 url=kwargs.get('url'),
             ) for i, chunk in enumerate(parsed)
         ]
+
+        if pyenv.settings.min_chunk_chars:
+            docs = list(filter(lambda doc: len(doc.data) >= int(pyenv.settings.min_chunk_chars), docs))
 
         # for prev, doc, next in self.window([None, *docs, None], 3):
         #     doc.prev_id = prev.id if prev else None
