@@ -48,6 +48,9 @@ class _MilvusConnector(BaseConnector):
 
             if (details['metric_type'] != pyenv.settings.milvus_metric_type or
                     details['index_type'] != pyenv.settings.milvus_index_type):
+                self.client.release_collection(
+                    collection_name=self.collection_name
+                )
                 self.client.drop_index(
                     collection_name=self.collection_name,
                     index_name='vector_index'
