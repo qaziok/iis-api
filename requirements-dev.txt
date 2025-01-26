@@ -48,6 +48,7 @@ chromadb==0.6.3
 click==8.1.7
     # via
     #   pip-tools
+    #   sacremoses
     #   typer
     #   uvicorn
 coloredlogs==15.0.1
@@ -138,7 +139,9 @@ jinja2==3.1.4
     #   fastapi
     #   torch
 joblib==1.4.2
-    # via scikit-learn
+    # via
+    #   sacremoses
+    #   scikit-learn
 kubernetes==31.0.0
     # via chromadb
 markdown-it-py==3.0.0
@@ -333,7 +336,9 @@ pyyaml==6.0.2
     #   transformers
     #   uvicorn
 regex==2024.11.6
-    # via transformers
+    # via
+    #   sacremoses
+    #   transformers
 requests==2.32.3
     # via
     #   datasets
@@ -353,6 +358,8 @@ rsa==4.9
     # via google-auth
 ruff==0.5.0
     # via -r requirements-dev.in
+sacremoses==0.1.1
+    # via -r /workspaces/app/requirements.in
 safetensors==0.4.5
     # via transformers
 scikit-learn==1.6.1
@@ -398,6 +405,7 @@ tqdm==4.67.1
     #   datasets
     #   huggingface-hub
     #   milvus-lite
+    #   sacremoses
     #   sentence-transformers
     #   transformers
 transformers==4.47.0

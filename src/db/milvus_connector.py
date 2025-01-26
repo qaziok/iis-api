@@ -20,10 +20,15 @@ class _MilvusConnector(BaseConnector):
             FieldSchema(name="id", dtype=DataType.VARCHAR,
                         is_primary=True, max_length=36),
             FieldSchema(name="vector",
-                        dtype=DataType.FLOAT_VECTOR, dim=768),
+                        dtype=DataType.FLOAT_VECTOR, dim=int(pyenv.settings.milvus_vector_dim)),
         ]
 
         schema = CollectionSchema(fields=fields, enable_dynamic_field=True)
+
+        if pyenv.settings.milvus_force_drop == 'true':
+            self.client.drop_collection(
+                collection_name=self.collection_name
+            )
 
         if not self.client.has_collection(collection_name=self.collection_name):
             self.client.create_collection(
