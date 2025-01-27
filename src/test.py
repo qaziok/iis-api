@@ -61,6 +61,7 @@ def F1(truth, predictions):
 
 
 if __name__ == "__main__":
+    print(pyenv.settings)
     tests = pyenv.tests
 
     queries = [test['query'] for test in tests]
