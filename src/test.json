@@ -88,5 +88,40 @@
         "query": "Kto rządzi Grenlandią?",
         "segments": ["73f79236-1708-4595-a5e2-db8295b98cf0", "a6fc756d-8fed-403f-aac5-02119341cfbb", "eefc433c-ef48-42e5-b8d0-56d0c3d6cafd", "b0ca69e2-495f-41b5-bd3c-26c04af1ec16", "13428f3a-9e18-47f1-bf67-a793684c26a8"],
         "articles": ["https://pl.wikipedia.org/wiki/Grenlandia"]
+    },
+    {
+        "query": "Jakie są obecne serie rajdowe?",
+        "segments": ["4203960d-4294-420e-9463-24b53636906b", "dd709bd8-7ab9-45b3-9ba4-e4fa7d1c777b", "dfd69a15-adab-4c25-ae48-7641f50f2949", "947c3768-e363-4266-83d6-08af19e19c71", "5a1eecde-149b-4347-8be7-58513b005e3d"],
+        "articles": ["https://pl.wikipedia.org/wiki/Rajd%20samochodowy", "https://pl.wikipedia.org/wiki/Rajdowe%20mistrzostwa%20%C5%9Bwiata", "https://pl.wikipedia.org/wiki/Rajdowe%20Mistrzostwa%20Europy"]
+    },
+    {
+        "query": "Ile jest gier z serii Forza Horizon?",
+        "segments": ["0b40ad98-1af7-442d-8b56-ef51ef127c6f", "0315fb20-01b0-4002-91c9-4ea493d3681f", "ae6d6e36-5bcb-4dce-baa9-2de32516974f", "2811c728-3ae0-43b4-9e88-eb9018f6ae60", "af0fc186-c5cc-4d26-9f0c-61f2d18f6fc9"],
+        "articles": ["https://pl.wikipedia.org/wiki/Forza%20Horizon", "https://pl.wikipedia.org/wiki/Forza%20Horizon%202", "https://pl.wikipedia.org/wiki/Forza%20Horizon%203", "https://pl.wikipedia.org/wiki/Forza%20Horizon%204", "https://pl.wikipedia.org/wiki/Forza%20Horizon%205"]
+    },
+    {
+        "query": "Jakie są klasy samochodów osobowych według wielkości",
+        "segments": ["ca6c332a-1595-4e69-ab2e-fef6cad8119e", "3e05b245-6aa8-4ca2-9114-44e159d32003", "94b136f6-665c-46bc-b130-adf541bbb7db", "cc9555d1-aa08-41b4-b65b-2df76faf4c93", "9a82248a-38ef-483f-9fc6-10e3dd926973"],
+        "articles": ["https://pl.wikipedia.org/wiki/Klasa%20samochodu", "https://pl.wikipedia.org/wiki/Autosegment%20A", "https://pl.wikipedia.org/wiki/Autosegment%20B", "https://pl.wikipedia.org/wiki/Autosegment%20C", "https://pl.wikipedia.org/wiki/Autosegment%20D"]
+    },
+    {
+        "query": "Jakie są największe wyspy w Japonii?",
+        "segments": ["b26e17ea-74a4-4f87-b9bb-f9412241d08f", "fe26030c-df2c-4b6d-bafb-a8f308fa3d0f", "be892943-a084-41da-8e03-38c95b94269c", "f90fd5f6-1195-4b55-b771-7d4541d21f37", "bd01012c-9b98-4398-8d24-b0de06f744e3"],
+        "articles": ["https://pl.wikipedia.org/wiki/Geografia%20Japonii", "https://pl.wikipedia.org/wiki/Honsiu", "https://pl.wikipedia.org/wiki/Hokkaido", "https://pl.wikipedia.org/wiki/Kiusiu", "https://pl.wikipedia.org/wiki/Sikoku"]
+    },
+    {
+        "query": "Ile jest generacji samochodu Mazda 3?",
+        "segments": ["2de65cb6-3213-4d56-b780-ae515ab2a32f", "78e22026-e05a-4ef4-9244-9dcafb8b38d8", "6f588ee7-cbd9-490c-8dd0-753eeca637ce", "4317074f-2456-48c3-b903-b3505a9d57e0", "a48e0f0c-5076-4fca-8b40-115ec105dc99"],
+        "articles": ["https://pl.wikipedia.org/wiki/Mazda%203"]
+    },
+    {
+        "query": "Jakie łańcuchy górskie występują na terenie Polski?",
+        "segments": ["c1d08f0a-5c17-4cb9-b42d-4d2b20f36180", "e7125e01-4421-4b02-802e-205f93289049", "89501e85-2570-4915-b810-cd61942ec81c", "0a302658-4c8e-45a4-bc60-f8905aca9484", "78023678-48ed-41b9-8a71-bb0a8929af72"],
+        "articles": ["https://pl.wikipedia.org/wiki/G%C3%B3ry%20w%20Polsce", "https://pl.wikipedia.org/wiki/G%C3%B3ry%20%C5%9Awi%C4%99tokrzyskie", "https://pl.wikipedia.org/wiki/Karpaty", "https://pl.wikipedia.org/wiki/Sudety"]
+    },
+    {
+        "query": "Jakie oceany wyrózniamy na Ziemi?",
+        "segments": ["4b5bf83c-c877-4bcc-9a79-1880507caf07", "9e3cfbcf-b415-4249-9459-95e9078277cf", "c94bac71-88e3-44a0-87be-10198117fc80", "5d5cb88f-b3d8-4d73-8ddf-1db973e5877a", "a6263dac-c2f6-4a94-9a1d-d25033a31d8b"],
+        "articles": ["https://pl.wikipedia.org/wiki/Ocean%20Spokojny", "https://pl.wikipedia.org/wiki/Ocean%20Atlantycki", "https://pl.wikipedia.org/wiki/Ocean%20Indyjski", "https://pl.wikipedia.org/wiki/Ocean%20Po%C5%82udniowy", "https://pl.wikipedia.org/wiki/Ocean%20Arktyczny"]
     }
 ]
