@@ -48,13 +48,15 @@ def NDCG(truth, predictions, relevance=[3, 2, 2, 1, 1]):
 
 
 # F1
-def occurences(true, pred):
-    return int(sum([pred.count(t) for t in true]))
-
-
 def F1(truth, predictions):
+    def row_f1(true, pred):
+        h = len(set(true).intersection(set(pred)))
+        p = h / len(pred) if len(pred) > 0 else 0
+        r = h / len(true) if len(true) > 0 else 0
+        return 2 * p * r / (p + r) if p + r > 0 else 0
+
     rows = list(zip(truth, predictions))
-    hits = list(map(lambda row: occurences(row[0], row[1]) / len(row[0]), rows))
+    hits = list(map(lambda row: row_f1(*row), rows))
     return float(fmean(hits))
 
 

@@ -98,7 +98,7 @@ class _MilvusConnector(BaseConnector):
                 id=doc['id'],
                 data=doc['entity']['data'],
                 url=doc['entity']['url'],
-                score=1-doc['distance']
+                score=doc['distance']
             )
             for doc in res[0]
         ]
