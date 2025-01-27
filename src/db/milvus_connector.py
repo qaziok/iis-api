@@ -40,6 +40,9 @@ class _MilvusConnector(BaseConnector):
             metric_type=pyenv.settings.milvus_metric_type,
             index_type=pyenv.settings.milvus_index_type,
             index_name="vector_index",
+            params={
+                "m": 4
+            }
         )
 
         indexes = self.client.list_indexes(
