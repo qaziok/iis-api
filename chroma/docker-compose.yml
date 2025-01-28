@@ -5,7 +5,7 @@ services:
       - IS_PERSISTENT=TRUE
       - PERSIST_DIRECTORY=${PERSIST_DIRECTORY:-/chroma/chroma}
     volumes:
-      - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/chroma:/chroma/chroma
+      - ${DOCKER_VOLUME_DIRECTORY:-..}/volumes/chroma:/chroma/chroma
     deploy:
       resources:
         reservations:
@@ -19,8 +19,7 @@ services:
     ports:
       - "18434:8080"
     env_file:
-      - .envs/.env.base
-      - .envs/.env.chroma
+      - .env.chroma
     depends_on:
       - "chroma"
     deploy:
@@ -30,3 +29,13 @@ services:
             - driver: nvidia
               count: 1
               capabilities: [gpu]
+              
+  web:
+    image: qaziok/iis-web
+    ports:
+      - "18435:80"
+    environment:
+      - VUE_APP_API_URL=/api
+      - VUE_APP_API_TIMEOUT=10000
+    depends_on:
+      - "api"

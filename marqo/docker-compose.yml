@@ -1,0 +1,61 @@
+services:
+  vespa:
+    image: vespaengine/vespa-generic-intel-x86_64
+    ports:
+      - "8080:8080"
+      - "19071:19071"
+      - "2181:2181"
+    volumes:
+      - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/vespa/storage:/opt/vespa/var
+      - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/vespa/logs:/opt/vespa/logs
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+
+  marqo:
+    image: marqoai/marqo
+    environment:
+      - VESPA_CONFIG_URL=http://vespa:19071
+      - VESPA_QUERY_URL=http://vespa:8080
+      - VESPA_DOCUMENT_URL=http://vespa:8080
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    depends_on:
+      - vespa
+
+  api:
+    image: qaziok/iis-api:main
+    ports:
+      - "18434:8080"
+    env_file:
+      - ../.env.base
+      - .env.marqo
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    depends_on:
+      - "marqo"
+
+  web:
+    image: qaziok/iis-web
+    ports:
+      - "80:80"
+    environment:
+      - VUE_APP_API_URL=/api
+      - VUE_APP_API_TIMEOUT=10000
+    depends_on:
+      - "api"
